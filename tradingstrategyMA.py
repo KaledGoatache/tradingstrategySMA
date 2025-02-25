@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 %matplotlib inline
 
-#import FB's stock data, add two columns - MA10 and MA50
+#import Microsoft's stock data, add two columns - MA10 and MA50
 #use dropna to remove any "Not a Number" data
 ms = pd.DataFrame.from_csv('../data/microsoft.csv')
 ms['MA10'] = ms['Close'].rolling(10).mean()
